@@ -1,0 +1,44 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Nov 13 15:17:44 2026
+| Host         : LAPTOP-O02QUBJQ running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file C:/FPGA/build/vivado/cdc.rpt
+| Design       : basys3_top
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID     Severity  Count  Description
+-----  --------  -----  ------------------------------------------
+CDC-1  Critical      2  1-bit unknown CDC circuitry
+CDC-3  Info         16  1-bit synchronized with ASYNC_REG property
+
+Source Clock: input port clock
+Destination Clock: sys_clk_pin
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------  ----------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  btnC           rst_sync_reg[0]/D
+  2  CDC-1  Critical  1-bit unknown CDC circuitry                     0  False Path  sd_miso        sd/spi/rx_reg_reg[0]/D
+  3  CDC-1  Critical  1-bit unknown CDC circuitry                     0  False Path  sw[15]         slow_spi_reg/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[0]          sw_meta_reg[0]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[1]          sw_meta_reg[1]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[2]          sw_meta_reg[2]/D
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[3]          sw_meta_reg[3]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[4]          sw_meta_reg[4]/D
+  9  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[5]          sw_meta_reg[5]/D
+ 10  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[6]          sw_meta_reg[6]/D
+ 11  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[7]          sw_meta_reg[7]/D
+ 12  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[8]          sw_meta_reg[8]/D
+ 13  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[9]          sw_meta_reg[9]/D
+ 14  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[10]         sw_meta_reg[10]/D
+ 15  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[11]         sw_meta_reg[11]/D
+ 16  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[12]         sw_meta_reg[12]/D
+ 17  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  sw[13]         sw_meta_reg[13]/D
+ 18  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  btnU           up_sync_reg[0]/D
+

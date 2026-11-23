@@ -1,0 +1,18 @@
+# Waveform dumps (regenerate by running the testbenches; one is >100 MB)
+*.vcd
+
+# Compiled simulation executables (iverilog output)
+*.vvp
+a.out*
+cmd_sim
+ctl_sim
+mount_sim
+sim
+sim_out
+spi_sim
+top_sim
+
+# Vivado cache / logs
+.Xil/
+*.jou
+*.log

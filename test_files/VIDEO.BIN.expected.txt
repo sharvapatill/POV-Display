@@ -1,0 +1,1 @@
+size=100000 (0x186A0)  SW2 shows 86A0 with DP on  |  SW1 xor shows 0095
